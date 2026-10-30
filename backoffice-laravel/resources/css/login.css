@@ -1,0 +1,51 @@
+/* login */
+.login-module {
+    width: 450px;
+    border-radius: 15px;
+    background-color: var(--color-card);
+}
+
+.module-subtitle {
+    color: var(--color-text);
+}
+
+#login-form label {
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+#login-form input[type="text"],
+#login-form input[type="email"],
+#login-form input[type="password"] {
+    border: none;
+    background-color: var(--color-primary-sub);
+    padding: 0.5rem 1rem;
+
+    &:focus-visible,
+    &:focus {
+        box-shadow: none;
+    }
+
+    &:autofill {
+        background-color: var(--color-primary-sub) !important;
+    }
+}
+
+#login-form input[type="radio"]:focus {
+    box-shadow: none;
+}
+
+#login-form input:checked[type="radio"] {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.login-module-div {
+    position: relative;
+}
+
+.login-module-div i {
+    position: absolute;
+    bottom: 11px;
+    left: 15px;
+}

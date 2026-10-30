@@ -1,0 +1,29 @@
+/* edit client */
+#edit-client-form label {
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+#edit-client-form input[type="text"],
+#edit-client-form input[type="number"],
+#edit-client-form input[type="email"],
+#edit-client-form input[type="date"],
+#edit-client-form textarea {
+    border: none;
+    background-color: var(--color-primary-sub);
+    padding: 0.5rem 1rem;
+
+    &:focus-visible,
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+#edit-client-form input[type="radio"]:focus {
+    box-shadow: none;
+}
+
+#edit-client-form input:checked[type="radio"] {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}

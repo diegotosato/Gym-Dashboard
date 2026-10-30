@@ -1,0 +1,100 @@
+:root {
+    --color-primary: #4f46e5;
+    --color-primary-sub: #eef0fb;
+    --color-secondary: #535ae8;
+    --color-success: #10b981;
+    --color-success-sub: #e6f8f0;
+    --color-danger: #ef4444;
+    --color-danger-sub: #fdecef;
+    --color-warning: #f59e0b;
+    --color-warning-sub: #fdf3e2;
+    --color-info: #06b6d4;
+    --color-info-sub: #e9f0fe;
+    --color-bg: #f4f8fc;
+    --color-card: #ffffff;
+    --color-title: #172443;
+    --color-text: #616872;
+    --color-male: #0e36b8;
+    --color-female: #df1783;
+    --color-trainer: #0d9488;
+}
+
+body {
+    width: calc(100vw - 330px);
+    margin-left: auto;
+    background-color: var(--color-bg);
+}
+
+/* utilities */
+.back-link {
+    text-decoration: none;
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+.sector-title {
+    color: var(--color-primary);
+    text-transform: uppercase;
+}
+
+.see-client-info {
+    background-color: var(--color-primary-sub) !important;
+    color: var(--color-primary) !important;
+}
+
+/* pills */
+.pill {
+    border-radius: 50px;
+    padding: 0.2rem 0.7rem;
+}
+
+.success-pill {
+    color: var(--color-success);
+    background-color: var(--color-success-sub);
+}
+
+.danger-pill {
+    color: var(--color-danger);
+    background-color: var(--color-danger-sub);
+}
+
+.warning-pill {
+    color: var(--color-warning);
+    background-color: var(--color-warning-sub);
+}
+
+.info-pill {
+    color: var(--color-info);
+    background-color: var(--color-info-sub);
+}
+
+/* buttons */
+.success-button {
+    background-color: var(--color-success) !important;
+    color: var(--color-card) !important;
+}
+
+.danger-button {
+    background-color: var(--color-danger) !important;
+    color: var(--color-card) !important;
+}
+
+.warning-button {
+    background-color: var(--color-warning-sub) !important;
+    color: var(--color-warning) !important;
+}
+
+.info-button {
+    background-color: var(--color-info-sub) !important;
+    color: var(--color-info) !important;
+}
+
+.back-button {
+    background-color: var(--color-card) !important;
+    color: var(--color-text) !important;
+}
+
+.send-button {
+    background-color: var(--color-info) !important;
+    color: var(--color-card) !important;
+}

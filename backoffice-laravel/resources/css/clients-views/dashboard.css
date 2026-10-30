@@ -1,0 +1,89 @@
+#recep-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: var(--color-card);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* HEADER */
+#recep-table thead {
+    background-color: var(--color-primary);
+}
+
+#recep-table thead th {
+    padding: 1rem;
+    text-align: left;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+}
+
+#recep-table tbody tr:not(:last-child) td {
+    border-bottom: 2px solid var(--color-bg) !important;
+}
+
+#recep-table tbody tr:hover {
+    td {
+        background-color: var(--color-bg);
+    }
+}
+
+#recep-table tbody tr td {
+    padding: 0.5rem 1rem;
+    color: var(--color-text);
+    vertical-align: middle;
+}
+
+.pagination {
+    gap: 6px;
+    margin-top: 1rem;
+}
+
+.pagination:first-child {
+    margin-left: 10px;
+}
+
+/* LINK BASE */
+.pagination .page-link {
+    background-color: var(--color-card);
+    color: var(--color-text);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px !important;
+    padding: 0.5rem 0.85rem;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    box-shadow: none;
+}
+
+/* HOVER */
+.pagination .page-link:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--color-primary);
+    transform: translateY(-1px);
+}
+
+/* ACTIVE PAGE */
+.pagination .active .page-link {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: #fff;
+    font-weight: 600;
+}
+
+/* DISABLED */
+.pagination .disabled .page-link {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.05);
+}
+
+/* FOCUS (rimuove blu bootstrap) */
+.pagination .page-link:focus {
+    box-shadow: none;
+    outline: none;
+}

@@ -1,0 +1,80 @@
+/* workouts */
+.accordion-button {
+    color: var(--color-text);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--color-text);
+    background-color: var(--color-card);
+    box-shadow: none;
+}
+
+.week-accordion-button,
+.week-accordion-body {
+    color: var(--color-primary);
+    background-color: var(--color-primary-sub);
+}
+
+.week-accordion:focus {
+    box-shadow: none;
+}
+
+.week-accordion:not(.collapsed) {
+    color: var(--color-text);
+    background-color: var(--color-card);
+    box-shadow: none;
+}
+
+.week-accordion-button:not(.collapsed) {
+    color: var(--color-primary);
+    background-color: var(--color-primary-sub);
+    box-shadow: none;
+    border-bottom: none;
+}
+
+.week-accordion-body {
+    border-radius: 0 0 5px 5px;
+    padding-top: 0;
+}
+
+.session-accordion-button {
+    color: var(--color-text);
+}
+
+.session-accordion-button:focus {
+    box-shadow: none;
+}
+
+.session-accordion-button:not(.collapsed) {
+    color: var(--color-text);
+    background-color: var(--color-card);
+    box-shadow: none;
+    border-bottom: none;
+}
+
+/* weeks */
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+}
+
+.heading-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--color-primary-sub);
+    color: var(--color-primary);
+}
+
+.heading p {
+    color: var(--color-text);
+}
